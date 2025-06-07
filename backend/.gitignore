@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Build
+dist/
+build/
+
+# Env
+.env
+
+# System
+.DS_Store
+Thumbs.db
