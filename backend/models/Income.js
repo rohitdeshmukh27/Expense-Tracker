@@ -9,7 +9,7 @@ const IncomeSchema = new mongoose.Schema(
     },
     icon: { type: String },
     source: { type: String, required: true }, //Example: salary, freelance, etc
-    amount: { type: String, required: true },
+    amount: { type: Number, required: true },
     date: { type: Date, default: Date.now },
   },
   {
