@@ -5,20 +5,12 @@ const AuthLayout = ({ children }) => {
   return (
     <div className="min-h-screen flex bg-[#f8f5ff] select-none">
       {/* Left Side - Auth Form */}
-      <div className="w-full lg:w-1/3 p-8 flex flex-col justify-center">
-        <div className="max-w-md mx-auto w-full">
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">
-            Expense Tracker
-          </h1>
-          <p className="text-gray-600 text-sm mb-8">
-            Please enter your details to log in
-          </p>
-          <div className="bg-white rounded-2xl shadow-lg p-8">{children}</div>
-        </div>
+      <div className="w-full lg:w-2/5 p-8 flex flex-col justify-center">
+        <div className="max-w-lg mx-auto w-full">{children}</div>
       </div>
 
       {/* Right Side - Dashboard Preview */}
-      <div className="hidden lg:flex w-2/3 bg-gradient-to-br from-purple-600 to-purple-500 rounded-l-[3rem] p-12 relative overflow-hidden ">
+      <div className="hidden lg:flex w-3/5 bg-gradient-to-br from-purple-600 to-purple-500 rounded-l-[3rem] p-12 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-full h-full">
           {/* Decorative Elements */}
           <div className="absolute top-5 right-12 bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
@@ -39,7 +31,7 @@ const AuthLayout = ({ children }) => {
                 </svg>
               </div>
               <div>
-                <p className="text-white/60 text-sm select-none">
+                <p className="text-white/60 text-sm">
                   Track Your Income & Expenses
                 </p>
                 <p className="text-white text-2xl font-bold">$430,000</p>

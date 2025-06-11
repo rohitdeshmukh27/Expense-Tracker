@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <DashboardLayout activeMenu="Dashboard">
+      
+    </DashboardLayout>
+  );
+};
 
-export default Home
+export default Home;
